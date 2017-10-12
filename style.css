@@ -1,0 +1,131 @@
+body {
+	background-color: lightgray;
+}
+
+nav {
+	background-color: darkgray;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	color: black;
+}
+
+nav ul {
+	text-align: right;
+	margin-right: 10em;
+}
+
+nav ul li {
+	margin: 10px;
+	padding: 10px;
+	font-size: 1em;
+}
+
+ul li a {
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+main article {
+	margin-right: 0;
+	background-color: white;
+	width: 70%;
+	height: 70vh;
+	display: inline-block;
+}
+
+main aside {
+	margin-left: -10px;
+	padding: 0;
+	/* display: inline-block; */
+	width: 30%;
+	float: right;
+}
+
+main aside ul li {
+	min-height: 3em;
+	padding: 1em 0 1.5em 1em;
+	width: 95%;
+	margin: 0 0 2px -25px;
+	background-color: white;
+}
+
+footer {
+	background: black;
+	margin-top: 10px;
+	padding: 10px 50%;
+}
+
+footer button {
+	height: 20px;
+	background-color: lightgray;
+	border: none;
+	color: black;
+}
+
+
+
+
+/* Phone view */
+
+ @media screen and (max-width: 500px){
+	nav ul {
+		text-align: center;
+	}
+	nav ul li {
+		margin: 0;
+		padding-left: 10px;
+	}
+	ul li {
+		margin-right: 0;
+	}
+	main article,
+	main aside,
+	ul li {
+		width: 100%;
+	}
+	main aside {
+		/* float: left;
+		margin-left: 0px; */
+		display: none;
+	}
+	main article {
+		background-color: white;
+		height: auto;
+	}
+	main aside ul li {
+		margin-bottom: 2px;
+		width: 100%;
+		min-height: 1em;
+	}
+	footer {
+		padding: 10px 43%;
+	}
+} 
+/* Tablet view */
+ @media screen and (max-width: 800px)  {
+	main article,
+	main aside {
+		width: 100%;
+	}
+	main aside {
+		float: left;
+		margin-left: 0px;
+	}
+	main article {
+		background-color: white;
+		height: auto;
+	}
+	main aside ul li {
+		margin-bottom: 2px;
+		width: 100%;
+		min-height: 1em;
+	}
+} 
